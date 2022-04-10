@@ -62,16 +62,6 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Tiles
     second: {fileID: 2100000, guid: 777d569bce6e2bc4ab530042e73da8fe, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: standardSurface10
-    second: {fileID: 2100000, guid: d026622978d9eae4f86da9825608f8c7, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: standardSurface11
-    second: {fileID: 2100000, guid: cd45dd44595a85d43aa6bd8733344978, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -102,15 +92,15 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 100
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
     sortHierarchyByName: 1
     importVisibility: 1
     importBlendShapes: 1
-    importCameras: 1
-    importLights: 1
+    importCameras: 0
+    importLights: 0
     fileIdsGeneration: 2
     swapUVChannels: 0
     generateSecondaryUV: 0
