@@ -46,6 +46,7 @@ public class Fase2 : MonoBehaviour
         }
         if (check()) {
             Debug.Log("Fase 2 brrr");
+            hecho = true;
         }
     }
 
