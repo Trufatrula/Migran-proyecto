@@ -10,6 +10,9 @@ public class Fase1 : MonoBehaviour
     [SerializeField]
     private GameObject libro;
 
+    [SerializeField]
+    private TpFinal finalSecreto;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -49,7 +52,7 @@ public class Fase1 : MonoBehaviour
             GameObject inst = Instantiate(libro);
             inst.transform.position = pos;
         }
-        entrarEnFase2();
+        finalSecreto.activar();
     }
     
     public void entrarEnFase2() {

@@ -11,6 +11,8 @@ public class MoveJugador : MonoBehaviour {
     public LayerMask Suelo;
     public float SaltoAltura = 3;
 
+    private bool allowTp = false;
+
     private Vector3 v;
     private bool inGround;
 
@@ -21,6 +23,10 @@ public class MoveJugador : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
+        if (allowTp) {
+            allowTp = false;
+            return;
+        }
         this.inGround = Physics.CheckSphere(this.DetectarSuelo.position, this.DistanciaSuelo, this.Suelo);
 
         float x = Input.GetAxis("Horizontal");
@@ -41,5 +47,9 @@ public class MoveJugador : MonoBehaviour {
 
         this.Jugador.Move(disp * Time.deltaTime);
 
+    }
+
+    public void setAllowTp() {
+        allowTp = true;
     }
 }

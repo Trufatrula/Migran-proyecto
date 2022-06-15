@@ -19,7 +19,6 @@ public class Fase2 : MonoBehaviour
     [SerializeField]
     private Material encendido;
 
-    // Start is called before the first frame update
     public void iniciarFase2()
     {
         RenderSettings.ambientLight = Color.black;
@@ -45,7 +44,7 @@ public class Fase2 : MonoBehaviour
             bolas[i].material = apagado;
         }
         if (check()) {
-            Debug.Log("Fase 2 brrr");
+            gameObject.GetComponent<Fase3>().iniciarFase3();
             hecho = true;
         }
     }
