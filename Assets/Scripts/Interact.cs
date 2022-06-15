@@ -17,9 +17,10 @@ public abstract class Interact : MonoBehaviour
 	}
 
     // Start is called before the first frame update
-    void Start()
+    protected void Start()
     {
-        
+        GameObject p = GameObject.Find("Personaje");
+        if (p != null) player = p;
     }
 
     // Update is called once per frame

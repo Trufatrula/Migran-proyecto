@@ -29,7 +29,7 @@ public class MoveJugador : MonoBehaviour {
         this.v.y += this.Gravedad * Time.deltaTime;
 
         if (this.inGround) {
-            this.v.y = -2;
+            if (this.v.y <= 0) this.v.y = -2;
             if (Input.GetButtonDown("Jump")) {
                 this.v.y = Mathf.Sqrt(this.SaltoAltura * -2 * this.Gravedad);
             } 

@@ -7,6 +7,9 @@ public class Fase1 : MonoBehaviour
     [SerializeField]
     private GameObject estanteria;
 
+    [SerializeField]
+    private GameObject libro;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -42,9 +45,9 @@ public class Fase1 : MonoBehaviour
 						laberinto.hayCamino(7, 0, x, y+1) ||
 						laberinto.hayCamino(7, 0, x, y-1)
 			));
-            //spawn libro
             Vector3 pos = new Vector3(2 * (0.785f * x - 5.1f), 0.75f, 2 * (0.79f * y - 9.1f));
-            Debug.Log(pos);
+            GameObject inst = Instantiate(libro);
+            inst.transform.position = pos;
         }
     }
 

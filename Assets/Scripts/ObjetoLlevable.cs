@@ -25,9 +25,11 @@ public class ObjetoLlevable : InteractConObjeto
     private float maxMovimiento = 5f;
 
     // Start is called before the first frame update
-    void Start()
+    new void Start()
     {
-        
+        base.Start();
+        GameObject m = GameObject.Find("Mano");
+        if (m != null) mano = m.transform;
     }
 
     // Update is called once per frame

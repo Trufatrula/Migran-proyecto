@@ -11,13 +11,13 @@ public class InteractuarMesa : InteractConObjeto
     [SerializeField]
     private GameObject posarLibro3;
 
+    [SerializeField]
     private Material encendido;
     private int contador = 0;
 
     // Start is called before the first frame update
-    void Start() {
+    new void Start() {
         setDistancia(3f);
-        encendido = Resources.Load<Material>("Encendido");
     }
 
     // Update is called once per frame

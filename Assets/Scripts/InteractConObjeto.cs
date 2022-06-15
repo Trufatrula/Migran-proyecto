@@ -10,7 +10,7 @@ public abstract class InteractConObjeto : Interact
     private bool enRango = false;
 
     // Start is called before the first frame update
-    void Start()
+    new void Start()
     {
         
     }
