@@ -17,7 +17,6 @@ public abstract class InteractConObjeto : Interact
 
     // Update is called once per frame
     new public void Update() {
-        Debug.Log("Me ejecuto");
         base.Update();
         if (enRango) {
             if (Input.GetKeyDown(interactKey)) {
