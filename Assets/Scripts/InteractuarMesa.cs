@@ -49,7 +49,7 @@ public class InteractuarMesa : InteractConObjeto
 				break;
 			case 2:
 				posar = posarLibro2;
-				//TODO: iniciar fase 2
+				player.GetComponent<Fase1>().entrarEnFase2();
 				break;
 			}
             contador++;

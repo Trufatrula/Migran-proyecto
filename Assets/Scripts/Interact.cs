@@ -5,7 +5,7 @@ using UnityEngine;
 public abstract class Interact : MonoBehaviour
 {
     [SerializeField]
-    private GameObject player;
+    protected GameObject player;
     [SerializeField]
     private float distancia = 1.2f;
     [SerializeField]

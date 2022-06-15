@@ -49,6 +49,11 @@ public class Fase1 : MonoBehaviour
             GameObject inst = Instantiate(libro);
             inst.transform.position = pos;
         }
+        entrarEnFase2();
+    }
+    
+    public void entrarEnFase2() {
+        gameObject.GetComponent<Fase2>().iniciarFase2();
     }
 
     // Update is called once per frame
