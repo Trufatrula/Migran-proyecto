@@ -3,18 +3,13 @@ using UnityEngine;
 public class HighScores : MonoBehaviour
 {
     public HighScoreDisplay[] highScoreDisplayArray;
-    List<HighScoreEntry> scores = new List<HighScoreEntry>();
+    public List<HighScoreEntry> scores;
     
     void Start()
     {
-        AddNewScore("John", 4500);
-        AddNewScore("Max", 5520);
-        AddNewScore("Dave", 380);
-        AddNewScore("Steve", 6654);
-        AddNewScore("Mike", 11021);
-        AddNewScore("Teddy", 3252);
+        scores = XMLManager.instance.LoadScores(); 
+        
         UpdateDisplay();
-        XMLManager.instance.SaveScores(scores);    
     }
     void UpdateDisplay()
     {
@@ -32,8 +27,9 @@ public class HighScores : MonoBehaviour
         }
     }
     
-    void AddNewScore(string entryName, int entryScore)
+    public void AddNewScore(string entryName, int entryScore)
     {
         scores.Add(new HighScoreEntry { name = entryName, score = entryScore });
+        UpdateDisplay();
     }
 }

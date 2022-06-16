@@ -7,6 +7,8 @@ public class Timer : MonoBehaviour
     public float timeRemaining = 100;
     public bool timerIsRunning = false;
     public Text timeText;
+    public GuardarTiempo guardarTiempo;
+
     private void Start()
     {
         timerIsRunning = true;
@@ -22,9 +24,9 @@ public class Timer : MonoBehaviour
             }
             else
             {
-                Debug.Log("Se queudo usted sin tiempo");
-                timeRemaining = 0;
+                timeRemaining = -1;
                 timerIsRunning = false;
+                guardarTiempo.Guardar();
             }
         }
     }

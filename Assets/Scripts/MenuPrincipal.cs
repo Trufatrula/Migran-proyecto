@@ -2,23 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class MenuPrincipal : MonoBehaviour
 {
-
+    public HighScores scores;
     public string migran;
 
     public GameObject puntuaciones;
-    // Start is called before the first frame update
+    public GameObject final;
+    public GameObject inputField;
+
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if(GuardarTiempo.tiempo >= 0)
+        {
+            final.SetActive(true);
+        }
     }
 
     public void IniciarJuego() 
@@ -42,5 +42,11 @@ public class MenuPrincipal : MonoBehaviour
         Debug.Log("Cerras");
     }
 
-
+    public void GuardarTotal()
+    {
+        scores.AddNewScore(inputField.GetComponent<TMP_InputField>().text, GuardarTiempo.tiempo);
+        XMLManager.instance.SaveScores(scores.scores); 
+        final.SetActive(false);
+        GuardarTiempo.tiempo = -1;
+    }
 }
