@@ -20,14 +20,14 @@ public class Laberinto
 			return;
 		}
 
-        int xCentro = Random.Range(xInicio + 1, xFinal - 1);
-        int yCentro = Random.Range(yInicio + 1, yFinal - 1);
+        int xCentro = Random.Range(xInicio + 1, xFinal);
+        int yCentro = Random.Range(yInicio + 1, yFinal);
 
-        int xAgujero1 = Random.Range(xInicio, xCentro - 1);
-        int xAgujero2 = Random.Range(xCentro + 1, xFinal);
+        int xAgujero1 = Random.Range(xInicio, xCentro);
+        int xAgujero2 = Random.Range(xCentro + 1, xFinal + 1);
 
-        int yAgujero1 = Random.Range(yInicio, yCentro - 1);
-        int yAgujero2 = Random.Range(yCentro + 1, yFinal);
+        int yAgujero1 = Random.Range(yInicio, yCentro);
+        int yAgujero2 = Random.Range(yCentro + 1, yFinal + 1);
 		
 		for (int i = xInicio; i <= xFinal; i++) {
 			setPared(i, yCentro, true);

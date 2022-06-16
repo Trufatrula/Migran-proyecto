@@ -1250,6 +1250,7 @@ GameObject:
   - component: {fileID: 724152071}
   - component: {fileID: 724152072}
   - component: {fileID: 724152073}
+  - component: {fileID: 724152074}
   m_Layer: 0
   m_Name: Personaje
   m_TagString: Untagged
@@ -1378,6 +1379,20 @@ MonoBehaviour:
   minPos: 200
   maxPos: 400
   timer: {fileID: 1164302248}
+--- !u!114 &724152074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 724152066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f362cab52c2b3339e957746e792d5061, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pos: {x: 0, y: 2.378, z: -18.425}
+  min: -5
 --- !u!1 &725313318 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5170374326719593927, guid: 46494b224e855914a90c2bc9d69d698f, type: 3}
