@@ -13,7 +13,7 @@ public class GuardarTiempo : MonoBehaviour
             SceneManager.LoadScene(1);
         } else {
             tiempo = 600 - (int) t;
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(0);
         }
     }
 }

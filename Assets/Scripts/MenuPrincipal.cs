@@ -23,7 +23,7 @@ public class MenuPrincipal : MonoBehaviour
 
     public void IniciarJuego() 
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     } 
 
     public void AbrirPunto()
