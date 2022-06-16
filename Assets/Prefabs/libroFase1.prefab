@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 884706567661435034}
   - component: {fileID: 884706567661435031}
   - component: {fileID: 884706567661435030}
+  - component: {fileID: 8657328148700136364}
   m_Layer: 0
   m_Name: libroFase1
   m_TagString: Untagged
@@ -145,6 +146,18 @@ MonoBehaviour:
   mano: {fileID: 0}
   maxDistancia: 3
   maxMovimiento: 5
+--- !u!114 &8657328148700136364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 37843259520358965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a67e9abf9682b76bb9fe98b3bfa34636, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &884706568930082383
 GameObject:
   m_ObjectHideFlags: 0

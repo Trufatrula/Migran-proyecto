@@ -50,7 +50,7 @@ public class Fase1 : MonoBehaviour
 			));
             Vector3 pos = new Vector3(2 * (0.785f * x - 5.1f), 0.75f, 2 * (0.79f * y - 9.1f));
             GameObject inst = Instantiate(libro);
-            inst.transform.position = pos;
+            inst.GetComponent<LibroPosFix>().setPos(pos);
         }
         finalSecreto.activar();
     }
