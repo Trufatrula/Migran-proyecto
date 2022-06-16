@@ -1249,6 +1249,7 @@ GameObject:
   - component: {fileID: 724152070}
   - component: {fileID: 724152071}
   - component: {fileID: 724152072}
+  - component: {fileID: 724152073}
   m_Layer: 0
   m_Name: Personaje
   m_TagString: Untagged
@@ -1360,6 +1361,23 @@ MonoBehaviour:
   vaso0: {fileID: 1710052091}
   vaso1: {fileID: 968366}
   vaso2: {fileID: 1914880834}
+--- !u!114 &724152073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 724152066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7aa455d835c37da07910eb228500ee64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerCamera: {fileID: 832438169}
+  player: {fileID: 724152066}
+  minPos: 200
+  maxPos: 400
+  timer: {fileID: 1164302248}
 --- !u!1 &725313318 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5170374326719593927, guid: 46494b224e855914a90c2bc9d69d698f, type: 3}
@@ -2464,7 +2482,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 473802e13b24511468dbe6da5f430e64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeRemaining: 100
+  timeRemaining: 600
   timerIsRunning: 0
   timeText: {fileID: 1164302246}
 --- !u!1 &1190176913 stripped

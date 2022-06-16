@@ -4,10 +4,9 @@ using UnityEngine;
 using UnityEngine.UI;
 public class Timer : MonoBehaviour
 {
-    public float timeRemaining = 100;
+    public float timeRemaining = 600;
     public bool timerIsRunning = false;
     public Text timeText;
-    public GuardarTiempo guardarTiempo;
 
     private void Start()
     {
@@ -26,7 +25,7 @@ public class Timer : MonoBehaviour
             {
                 timeRemaining = -1;
                 timerIsRunning = false;
-                guardarTiempo.Guardar();
+                GuardarTiempo.Guardar(-1);
             }
         }
     }

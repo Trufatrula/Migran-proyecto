@@ -36,7 +36,7 @@ public class TpFinal : InteractConObjeto
             player.GetComponent<MoveJugador>().setAllowTp();
             player.transform.position = position;
             player.transform.rotation = rotation;
-            //añadir fase final
+            player.GetComponent<FaseFinal>().iniciarFaseFinal();
         }
     }
 

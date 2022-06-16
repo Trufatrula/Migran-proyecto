@@ -7,7 +7,6 @@ using TMPro;
 public class MenuPrincipal : MonoBehaviour
 {
     public HighScores scores;
-    public string migran;
 
     public GameObject puntuaciones;
     public GameObject final;
@@ -15,6 +14,7 @@ public class MenuPrincipal : MonoBehaviour
 
     void Start()
     {
+        Cursor.lockState = CursorLockMode.None;
         if(GuardarTiempo.tiempo >= 0)
         {
             final.SetActive(true);
@@ -23,7 +23,7 @@ public class MenuPrincipal : MonoBehaviour
 
     public void IniciarJuego() 
     {
-        SceneManager.LoadScene(migran);
+        SceneManager.LoadScene(0);
     } 
 
     public void AbrirPunto()

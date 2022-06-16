@@ -6,16 +6,14 @@ using UnityEngine.SceneManagement;
 public class GuardarTiempo : MonoBehaviour
 {
     public static int tiempo = -1;
-    public Timer timer;
-    public string menuP;
 
-    public void Guardar()
+    public static void Guardar(int t)
     {
-        if(timer.timeRemaining == -1){
-            SceneManager.LoadScene(menuP);
+        if(t == -1){
+            SceneManager.LoadScene(1);
         } else {
-            tiempo = 300 - (int) timer.timeRemaining;
-            SceneManager.LoadScene(menuP);
+            tiempo = 600 - (int) t;
+            SceneManager.LoadScene(1);
         }
     }
 }
